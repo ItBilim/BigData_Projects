@@ -1,0 +1,9 @@
+[
+  "deterministic_seed",
+  "consecutive_nonoverlapping_episodes",
+  "journal_exact_changes",
+  "past_anomaly_enters_next_lag",
+  "future_injection_does_not_change_past_features",
+  "zero_and_tiny_growth_minimum_delta",
+  "independent_phase_rng"
+]

@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "validation_weeks": [30, 31],
+  "seeds": [42, 43, 44, 45, 46],
+  "selection_metric": "equal-weight weekly Precision@1%, averaged over five seeds",
+  "maximum_fit_rows_per_learned_model": 200000,
+  "threads": 4,
+  "isolation_forest_candidates": [
+    {"n_estimators": 100, "max_samples": 256, "max_features": 1.0},
+    {"n_estimators": 100, "max_samples": 1024, "max_features": 1.0},
+    {"n_estimators": 100, "max_samples": 1024, "max_features": 0.7}
+  ],
+  "lightgbm_candidates": [
+    {"n_estimators": 120, "num_leaves": 15, "min_child_samples": 100},
+    {"n_estimators": 120, "num_leaves": 31, "min_child_samples": 100},
+    {"n_estimators": 120, "num_leaves": 31, "min_child_samples": 300}
+  ],
+  "lightgbm_fixed": {"learning_rate": 0.05, "objective": "regression_l1", "verbosity": -1, "deterministic": true, "force_col_wise": true},
+  "budget": "Each learned family has 3 candidates x 2 validation weeks x 5 seeds = 30 fits; same at-most-200000 training row sample for a given fold and seed. Fixed model-size budgets differ by algorithm and actual wall time is recorded. No early stopping or test-week scoring in stage 5.",
+  "tie_break": "candidate order in this file"
+}

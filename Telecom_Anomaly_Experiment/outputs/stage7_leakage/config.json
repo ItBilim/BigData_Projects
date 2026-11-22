@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "scenario": "provided_anomalies",
+  "test_weeks": [32,33,34,35],
+  "seeds": [42,43,44,45,46],
+  "fit_cap": 200000,
+  "threads": 4,
+  "selection": "Stage 5 selected_parameters.json is used without retuning",
+  "leakage": "Replace four historical revenue neighbors with first four available calendar neighbors in order t-1,t+1,t-2,t+2,t-3,t+3,t-4,t+4. Exclude current revenue. Recompute mean2/mean4/median/std/MAD/min/max/zero share/fill share and all revenue deviations from that window. lag_1..lag_4 reflect this order. Keep prior counts and prior last-positive information unchanged.",
+  "scale_policy": "Use the same causal stage4 training-only scale floor for both arms to isolate neighbor-information effect",
+  "boundary_policy": "At week35 no future exists; use prior four neighbors. Earlier fit rows still use hindsight in control arm, which may extend into score weeks. Models/imputers are fit only on past row keys in both arms.",
+  "purpose": "Controlled retrospective information-contamination experiment; causal arm is primary scientific result. No claim of isolated single-feature causality or universal inflation."
+}

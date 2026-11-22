@@ -1,0 +1,11 @@
+{
+  "config_sha256": "4e9ab3784ee653d71b339d4d86500097323a55dbc4be9804a0b6de2acc469ff1",
+  "started_utc": "2026-11-22T12:17:01.043980+00:00",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0"
+  }
+}

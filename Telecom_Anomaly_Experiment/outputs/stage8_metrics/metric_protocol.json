@@ -1,0 +1,35 @@
+{
+  "scenario": "provided_anomalies",
+  "arm": "causal",
+  "weeks": [
+    32,
+    33,
+    34,
+    35
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "fractions": [
+    0.005,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "tie_rule": "score descending then msisdn text ascending",
+  "random_baseline": "Expected uniform random precision=weekly prevalence; also report realized same-seed random lift",
+  "segment_fit_weeks": [
+    26,
+    27,
+    28,
+    29
+  ],
+  "segment_fit_cohort": "primary",
+  "segment_cut_rule": "1/3 and 2/3 quantiles; low<=q1, middle q1<x<=q2, high>q2",
+  "magnitude": "absolute natural logarithm of revenue/revenue_original for injected rows; cutoff quantiles from initial training injections only",
+  "unscored_scenarios": "Stage6 generated synthetic journals have no model scores and are excluded; this run measures all existing causal test scores."
+}

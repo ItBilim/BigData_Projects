@@ -1,0 +1,9 @@
+{
+ "scenario":"d1_f2_r0.01",
+ "injection_seeds":[42,43,44,45,46],
+ "model_seed":42,
+ "model_seed_policy":"Fixed to separate injection randomness from model randomness. This experiment does not estimate their interaction.",
+ "training_contamination":"No extra training journal; earlier synthetic weeks enter later fit windows according to the frozen expanding policy.",
+ "selection":"Stage5 frozen parameters, same primary test keys, fit cap200000, threads2",
+ "scope":"One preselected representative scenario: one-week doubling, 1% injected rows. Conclusions about injection-seed variability are limited to this scenario."
+}

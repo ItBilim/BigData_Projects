@@ -1,0 +1,74 @@
+{
+  "global": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.3931365576102418
+  },
+  "isolation_forest": {
+    "candidate": 1,
+    "params": {
+      "n_estimators": 100,
+      "max_samples": 1024,
+      "max_features": 1.0
+    },
+    "validation_precision_at_1pct": 0.18843851810214288
+  },
+  "lightgbm_absolute": {
+    "candidate": 2,
+    "params": {
+      "learning_rate": 0.05,
+      "objective": "regression_l1",
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true,
+      "n_estimators": 120,
+      "num_leaves": 31,
+      "min_child_samples": 300
+    },
+    "validation_precision_at_1pct": 0.39469597462487954
+  },
+  "lightgbm_normalized": {
+    "candidate": 2,
+    "params": {
+      "learning_rate": 0.05,
+      "objective": "regression_l1",
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true,
+      "n_estimators": 120,
+      "num_leaves": 31,
+      "min_child_samples": 300
+    },
+    "validation_precision_at_1pct": 0.3714148465103474
+  },
+  "personal_mad": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.287783419561327
+  },
+  "random": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.009168511678061764
+  },
+  "simple_absolute": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.33681650931491763
+  },
+  "simple_normalized": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.2857274985086955
+  },
+  "weekly_absolute": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.312760619809113
+  },
+  "weekly_relative": {
+    "candidate": 0,
+    "params": {},
+    "validation_precision_at_1pct": 0.19837684405543066
+  }
+}

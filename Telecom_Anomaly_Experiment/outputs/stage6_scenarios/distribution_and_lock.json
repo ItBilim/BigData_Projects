@@ -1,0 +1,13 @@
+{
+  "minimum_absolute_delta": 0.10844476412831405,
+  "training_original_positive_quantiles": {
+    "0.0": 0.0017316167364566,
+    "0.01": 0.6604027020632347,
+    "0.5": 10.844476412831405,
+    "0.99": 21.409566303888806,
+    "1.0": 191.77397300051004
+  },
+  "split_spec_sha256": "a374da5b135c1b729dbd28faee5ed2ac68447411c9ae18c5772eca78ba5e5ca7",
+  "source_manifest_sha256": "9ac092c28acf4b1b38dc5c848458e1d1def2ed90af89d97bb2007b42840995b6",
+  "base_note": "Original revenue preserves natural variation; label zero means no artificial perturbation only."
+}

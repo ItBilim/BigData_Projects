@@ -1,0 +1,247 @@
+{
+  "version": "1.0.0",
+  "stage2_contract_sha256": "8c0909874a605c0ec09ec1e9fb6c7116a214774a4504cfaf7840c14682bc2c79",
+  "source_manifest_sha256": "9ac092c28acf4b1b38dc5c848458e1d1def2ed90af89d97bb2007b42840995b6",
+  "folds": [
+    {
+      "fold_id": "validation_30",
+      "phase": "validation",
+      "fit_weeks": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "history_weeks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "score_week": 30,
+      "fit_max_week": 29,
+      "hyperparameters_locked": false,
+      "tuning_metric_weeks": [],
+      "fit_cohort": "primary",
+      "score_cohorts": [
+        "primary",
+        "short_history"
+      ]
+    },
+    {
+      "fold_id": "validation_31",
+      "phase": "validation",
+      "fit_weeks": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "history_weeks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "score_week": 31,
+      "fit_max_week": 30,
+      "hyperparameters_locked": false,
+      "tuning_metric_weeks": [],
+      "fit_cohort": "primary",
+      "score_cohorts": [
+        "primary",
+        "short_history"
+      ]
+    },
+    {
+      "fold_id": "test_32",
+      "phase": "test",
+      "fit_weeks": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "history_weeks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "score_week": 32,
+      "fit_max_week": 31,
+      "hyperparameters_locked": true,
+      "tuning_metric_weeks": [
+        30,
+        31
+      ],
+      "fit_cohort": "primary",
+      "score_cohorts": [
+        "primary",
+        "short_history"
+      ]
+    },
+    {
+      "fold_id": "test_33",
+      "phase": "test",
+      "fit_weeks": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "history_weeks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "score_week": 33,
+      "fit_max_week": 32,
+      "hyperparameters_locked": true,
+      "tuning_metric_weeks": [
+        30,
+        31
+      ],
+      "fit_cohort": "primary",
+      "score_cohorts": [
+        "primary",
+        "short_history"
+      ]
+    },
+    {
+      "fold_id": "test_34",
+      "phase": "test",
+      "fit_weeks": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "history_weeks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "score_week": 34,
+      "fit_max_week": 33,
+      "hyperparameters_locked": true,
+      "tuning_metric_weeks": [
+        30,
+        31
+      ],
+      "fit_cohort": "primary",
+      "score_cohorts": [
+        "primary",
+        "short_history"
+      ]
+    },
+    {
+      "fold_id": "test_35",
+      "phase": "test",
+      "fit_weeks": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "history_weeks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "score_week": 35,
+      "fit_max_week": 34,
+      "hyperparameters_locked": true,
+      "tuning_metric_weeks": [
+        30,
+        31
+      ],
+      "fit_cohort": "primary",
+      "score_cohorts": [
+        "primary",
+        "short_history"
+      ]
+    }
+  ],
+  "validation_aggregation": "Equal-weight mean of weekly Precision@1% for weeks 30 and 31",
+  "selection_cutoff_week": 31,
+  "retraining": "Every scoring week, fit all learned transforms and models again using primary rows from weeks 26 through t-1",
+  "previous_test_policy": "Earlier test weeks may enter subsequent fitting without evaluation labels. No hyperparameter or feature changes based on test metrics.",
+  "seed_policy": "Same predefined seed list across all folds and methods",
+  "checks": {
+    "source_hash_verified": true,
+    "unique_keys": true,
+    "strict_past_fit": true,
+    "fit_score_keys_disjoint": true,
+    "minimum_history_verified": true
+  },
+  "artifacts": {
+    "row_assignments.csv.gz": "e468b6e0cba7e3c4c97bc612797b11e153f3a8e2413a26980240e1aaaafa4204",
+    "fold_summary.csv": "67e3b6b8d051124891830a553770fda899b14ffc9e9379479c7214e271e1c6de",
+    "phase_summary.csv": "88d8b5f8b41fd4cb0bca39cde4930e33edace7dfc3bd78e1a4c3c6d032653dc7"
+  },
+  "split_spec_sha256": "a374da5b135c1b729dbd28faee5ed2ac68447411c9ae18c5772eca78ba5e5ca7"
+}

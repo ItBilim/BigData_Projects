@@ -1,0 +1,11 @@
+{
+  "membership": {
+    "both": 1704601,
+    "left_only": 127392,
+    "right_only": 0
+  },
+  "panel_only_filled": {
+    "1": 127392
+  },
+  "original_revenue_mismatch": 0
+}

@@ -1,0 +1,9 @@
+{
+  "metric_rows": 832,
+  "score_files": 208,
+  "checks": [
+    "Unchanged controls identical in both arms",
+    "Final-week deterministic historical scores identical without future neighbors",
+    "Selected parameters unchanged"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "weekly_rows": 800,
+  "segment_rows": 11200,
+  "pooled_rows": 200,
+  "macro_rows": 40,
+  "segment_count_reconciliation": true,
+  "stage7_causal_reconciliation": true,
+  "new_synthetic_scenario_metrics_available": false,
+  "output_sha256": {
+    "weekly_metrics.csv": "1585b43469b6d74eb047e6aff304fba834f069b0f025d1d50266ff20423a55a6",
+    "macro_weekly_metrics.csv": "f2bea5c302d0e61872e9d1ee76b3acb7913f1792ec6142a483635731054d2a3b",
+    "pooled_seed_mean.csv": "d99a321dab301e8ce0587b029a5f67d86296f40961e97cf6f24f8393270d974c",
+    "segment_weekly_metrics.csv.gz": "2d658146e9785c68529bfb3e29de773b93e796d98ee7b7334e441d701919df88"
+  }
+}

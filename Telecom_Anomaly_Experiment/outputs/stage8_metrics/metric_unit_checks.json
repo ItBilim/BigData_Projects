@@ -1,0 +1,7 @@
+[
+  "lexicographic_tie_break",
+  "hand_computed_precision_recall_counts_lift",
+  "zero_positive_denominator",
+  "zero_random_denominator",
+  "invalid_score_rejected"
+]

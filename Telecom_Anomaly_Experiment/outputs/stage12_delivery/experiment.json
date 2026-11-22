@@ -1,0 +1,29 @@
+{
+  "archive": "D:/BigData/BigData_Projects/cdr_datasets.tar.gz",
+  "test_weeks": [32,33,34,35],
+  "model_seeds": [42,43,44,45,46],
+  "audit_fractions": [0.005,0.01,0.02,0.05],
+  "pipeline": [
+    "stage2_protocol/build_protocol.py",
+    "stage3_splits/build_splits.py",
+    "stage4_features/verify_features.py",
+    "stage4_features/run_features.py",
+    "stage5_methods/verify_methods.py",
+    "stage5_methods/run_validation.py",
+    "stage5_methods/summarize_validation.py",
+    "stage6_scenarios/run_scenarios.py",
+    "stage6_scenarios/verify_scenarios.py",
+    "stage6_scenarios/finalize_scenarios.py",
+    "stage7_leakage/run_leakage.py",
+    "stage7_leakage/finalize_comparison.py",
+    "stage8_metrics/verify_metrics.py",
+    "stage8_metrics/run_metrics.py",
+    "stage8_metrics/finalize_metrics.py",
+    "stage9_stability/verify_bootstrap.py",
+    "stage9_stability/run_bootstrap.py",
+    "stage9_stability/run_injection_seeds.py",
+    "stage9_stability/finalize_stability.py",
+    "stage10_11_audit/audit.py",
+    "stage10_11_audit/episode_audit.py"
+  ]
+}

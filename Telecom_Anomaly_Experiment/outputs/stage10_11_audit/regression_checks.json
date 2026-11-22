@@ -1,0 +1,12 @@
+{
+  "stage4_features/verify_features.py": "Passed 8 checks",
+  "stage5_methods/verify_methods.py": "All 10 method variants finite; forecast inputs and seed reproducibility checked",
+  "stage6_scenarios/verify_scenarios.py": "Passed 7 checks",
+  "stage8_metrics/verify_metrics.py": "Passed 5 metric checks",
+  "stage9_stability/verify_bootstrap.py": "Weighted bootstrap matches explicit duplicates, tie-aware AP/AUC and partial boundary selection",
+  "exact_journal_labels": true,
+  "strict_temporal_fit": true,
+  "shared_primary_keys": true,
+  "reconciled_weekly_rankings": 160,
+  "example_count": 215
+}

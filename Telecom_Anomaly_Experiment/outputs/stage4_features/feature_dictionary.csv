@@ -1,0 +1,26 @@
+﻿feature,formula,latest_information,forecast_allowed,missing_policy,dtype
+current_revenue,revenue[t],t,False,Keep NaN for unavailable history; imputer must fit training only,float64
+lag_1,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+lag_2,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+lag_3,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+lag_4,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+absolute_change_1,abs(revenue[t]-revenue[t-1]),t,False,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_mean_2,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_mean_4,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_median_4,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_std_4,"sample std of available t-4..t-1, ddof=1",t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_mad_4,"median(abs(history-median(history))), unscaled",t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+deviation_from_prior_mean,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t,False,Keep NaN for unavailable history; imputer must fit training only,float64
+deviation_from_prior_median,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t,False,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_zero_share_4,zero count / available prior observations in t-4..t-1,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_observation_count,"calendar observations before t, including provenance-flagged fills",t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+weeks_since_last_positive,t - latest positive revenue week strictly before t; NaN if none,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_min_4,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_max_4,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+deviation_from_prior_min,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t,False,Keep NaN for unavailable history; imputer must fit training only,float64
+deviation_from_prior_max,lag_i = revenue[t-i]; prior_*_w uses available t-w..t-1; deviation_from_prior_* = revenue[t]-prior_*,t,False,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_unfilled_count,unfilled observations before t,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+prior_filled_share_4,filled count / available prior observations in t-4..t-1,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+no_prior_positive,1 if no positive revenue before t,t-1,True,Keep NaN for unavailable history; imputer must fit training only,float64
+relative_change_1,"(revenue[t]-lag_1)/max(abs(lag_1),floor)",t; training floor,False,Keep NaN for unavailable history; imputer must fit training only,float64
+scaled_deviation_from_prior_median,"(revenue[t]-prior_median_4)/max(1.4826*prior_mad_4,floor)",t; training floor,False,Keep NaN for unavailable history; imputer must fit training only,float64

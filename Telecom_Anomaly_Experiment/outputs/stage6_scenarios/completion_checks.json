@@ -1,0 +1,23 @@
+{
+  "journal_files": 250,
+  "journal_rows": 1740755,
+  "full_history_rows_recomputed": 1831993,
+  "primary_score_rows_checked": 127090,
+  "lag_propagations_checked": 10860,
+  "recomputed_fold_scale": {
+    "floor": 4.3710044859211985,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 784284,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback"
+  },
+  "method_metrics_computed": false,
+  "generator_checks": [
+    "deterministic_seed",
+    "consecutive_nonoverlapping_episodes",
+    "journal_exact_changes",
+    "past_anomaly_enters_next_lag",
+    "future_injection_does_not_change_past_features",
+    "zero_and_tiny_growth_minimum_delta",
+    "independent_phase_rng"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "cpu": {
+    "Name": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8
+  },
+  "memory": {
+    "TotalVisibleMemorySize": 16623396,
+    "FreePhysicalMemory": 8220900
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

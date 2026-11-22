@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "minimum_prior_calendar_weeks": 4,
+  "keys": [
+    "msisdn",
+    "week"
+  ],
+  "detector_features": [
+    "current_revenue",
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_4",
+    "absolute_change_1",
+    "relative_change_1",
+    "prior_mean_2",
+    "prior_mean_4",
+    "prior_median_4",
+    "prior_std_4",
+    "prior_mad_4",
+    "deviation_from_prior_median",
+    "scaled_deviation_from_prior_median",
+    "prior_zero_share_4",
+    "prior_observation_count",
+    "weeks_since_last_positive"
+  ],
+  "forecast_features": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_4",
+    "prior_mean_2",
+    "prior_mean_4",
+    "prior_median_4",
+    "prior_std_4",
+    "prior_mad_4",
+    "prior_zero_share_4",
+    "prior_observation_count",
+    "weeks_since_last_positive"
+  ],
+  "evaluation_columns": [
+    "revenue_original",
+    "is_injected",
+    "injection_type",
+    "outlier_global",
+    "spike_local",
+    "target_next_week",
+    "target_next_is_filled"
+  ],
+  "audit_fractions": [
+    0.005,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "history_source": "2_weekly_revenue_panel.csv",
+  "evaluation_population": "Rows present in 3_weekly_revenue_anomalies.csv",
+  "filled_history": "Retain panel zero and is_filled for history accounting",
+  "short_history": "Separate supplementary cohort, never pooled into primary ranking",
+  "sha256": "8c0909874a605c0ec09ec1e9fb6c7116a214774a4504cfaf7840c14682bc2c79",
+  "checks_passed": [
+    "revenue_original",
+    "is_injected",
+    "injection_type",
+    "outlier_global",
+    "spike_local",
+    "msisdn",
+    "target_unknown",
+    "unregistered",
+    "future_fit_rejected",
+    "different_cohort_rejected"
+  ],
+  "cohort_counts": {
+    "primary": 1170964,
+    "short_history": 533637
+  },
+  "manifest_sha256": "9ac092c28acf4b1b38dc5c848458e1d1def2ed90af89d97bb2007b42840995b6"
+}

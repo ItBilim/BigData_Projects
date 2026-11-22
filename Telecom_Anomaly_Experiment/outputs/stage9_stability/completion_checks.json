@@ -1,0 +1,12 @@
+{
+  "bootstrap_replicates": 1000,
+  "interval_rows": 480,
+  "difference_rows": 432,
+  "synthetic_weekly_rows": 800,
+  "point_estimates_match_stage8": true,
+  "sha256": {
+    "confidence_intervals.csv": "c715ad438037332a4a9aa322d5b8e386a39e175c38772b218d1f3dd58983e2eb",
+    "paired_method_differences.csv": "4e6fffa9449e9440e881748a8d135e686d2eb80663d397ffa0b516debb3a82ca",
+    "injection_seed_variability.csv": "a0cdeeb6e25c1f8d15ffcd459765f08f196612627355815e5007865962be2410"
+  }
+}

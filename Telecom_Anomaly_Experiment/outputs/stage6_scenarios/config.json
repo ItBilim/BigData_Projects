@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "rates": [
+    0.001,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "factors": [
+    1.5,
+    2.0,
+    4.0,
+    0.75,
+    0.5,
+    0.1
+  ],
+  "durations": [
+    1,
+    2
+  ],
+  "phases": {
+    "validation": [
+      30,
+      31
+    ],
+    "test": [
+      32,
+      33,
+      34,
+      35
+    ]
+  },
+  "training_contamination_rates": [
+    0.0,
+    0.01,
+    0.05
+  ],
+  "minimum_delta_rule": "0.01 * median positive original revenue of primary fit rows weeks26..29",
+  "growth_rule": "new=old+max(old*(factor-1),minimum_delta)",
+  "dip_rule": "new=old*factor; require old-new>=minimum_delta; otherwise skip event",
+  "rate_rule": "floor(N*rate/duration) nonoverlapping events; N=primary phase candidate rows",
+  "phase_seed_rule": "SHA256(seed|phase|stage6-v1), excludes factor and rate for paired keys",
+  "contamination_rule": "Training-only one-week factor 2. Independent training RNG; same held-out journals reused unchanged."
+}

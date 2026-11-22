@@ -1,0 +1,95 @@
+{
+  "validation_30": {
+    "floor": 4.3830846041953615,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 423735,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback",
+    "fit_weeks": [
+      26,
+      27,
+      28,
+      29
+    ],
+    "score_week": 30
+  },
+  "validation_31": {
+    "floor": 4.384968957981153,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 538414,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback",
+    "fit_weeks": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "score_week": 31
+  },
+  "test_32": {
+    "floor": 4.385117614870641,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 659996,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback",
+    "fit_weeks": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "score_week": 32
+  },
+  "test_33": {
+    "floor": 4.388211495905375,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 784284,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback",
+    "fit_weeks": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "score_week": 33
+  },
+  "test_34": {
+    "floor": 4.389028125898027,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 911374,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback",
+    "fit_weeks": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "score_week": 34
+  },
+  "test_35": {
+    "floor": 4.3907345622273874,
+    "source": "median_positive_training_scaled_mad",
+    "training_rows": 1041015,
+    "rule": "median positive training 1.4826*MAD; revenue fallback; unit fallback",
+    "fit_weeks": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "score_week": 35
+  }
+}

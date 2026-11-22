@@ -1,0 +1,2 @@
+method,reference,fraction,metric,difference,ci_low,ci_high,interval_type,p_centered_bootstrap_two_sided,primary,holm_adjusted_p
+lightgbm_absolute,global,0.01,precision,0.0111873207136475,0.0083814268757436,0.0144332981388558,cluster_plus_model_seed,0.0009990009990009,True,0.0089910089910089

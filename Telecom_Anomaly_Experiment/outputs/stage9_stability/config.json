@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "scenario": "provided_anomalies",
+  "arm": "causal",
+  "test_weeks": [32,33,34,35],
+  "model_seeds": [42,43,44,45,46],
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20261122,
+  "primary_comparison": {"method": "lightgbm_absolute", "reference": "global", "metric": "precision", "fraction": 0.01},
+  "registration_status": "Registered before bootstrap, after point estimates were observed. This is an exploratory, not prospectively confirmatory, comparison.",
+  "secondary_family": "Nine methods versus global, precision at 1%; primary comparison is also included in this nine-test Holm family for conservative reporting",
+  "bootstrap": "Resample the union of test subscribers with replacement. Share subscriber multiplicities across all weeks, methods and seeds. Recalculate weekly N, ceil(N*fraction), and top-K boundary including partially selected copies of the boundary row.",
+  "intervals": ["subscriber_cluster_conditional_on_five_fitted_seeds", "subscriber_cluster_plus_paired_model_seed_resampling"],
+  "confidence": "95% percentile intervals; weeks fixed; trained models not refitted",
+  "metrics": ["precision", "recall", "lift", "per100", "average_precision", "roc_auc"],
+  "injection_seed_status": "The provided dataset has unknown injection seed. Stage6 has five newly generated injection seeds but no model scores; injection-seed performance uncertainty cannot be estimated in this run."
+}

@@ -1,0 +1,13 @@
+{
+  "passed": [
+    "hand_calculated_four_week_window",
+    "future_change_does_not_affect_past",
+    "forecast_features_independent_of_current_revenue",
+    "training_scale_independent_of_future_and_constant_series_finite",
+    "cold_start_keeps_missing_history",
+    "forbidden_columns_rejected",
+    "calendar_gap_rejected",
+    "deterministic_repeat"
+  ],
+  "count": 8
+}
